@@ -54,7 +54,7 @@ int main() {
 	float f = 3.14; //单精度
 	double pi = 99999999; //双精度
 
-	cout << isDark << "长度为" << sizeof isDark << endl;
+	cout << isDark << "长度为" << sizeof isDark << endl; //sizeof 表示查看占据多少字节
 	cout << z << "长度为" << sizeof z << endl; // A 
 	cout << z+1 << "长度为" << sizeof (z+1) << endl; // B = A + 1 = 65 + 1 = 66, 对应的 ASCII 码为 66
 	cout << color << "长度为" << sizeof color << endl;
