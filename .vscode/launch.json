@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/zen/Desktop/BasicCPlusPlus/basic/案例",
-      "program": "/Users/zen/Desktop/BasicCPlusPlus/basic/案例/build/Debug/outDebug"
+      "cwd": "/Users/aic/Desktop/BasicCPlusPlus/basic/案例",
+      "program": "/Users/aic/Desktop/BasicCPlusPlus/basic/案例/build/Debug/outDebug"
     }
   ]
 }
