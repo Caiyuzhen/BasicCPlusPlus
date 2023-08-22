@@ -85,11 +85,21 @@ int main() {
 	int element = rowRAM / elementRAM; // 每一行有多少个元素（多少列）, 算出为 4 列
 
 
+	// 方法一
 	for(int i = 0; i < row; i ++ ) { //遍历每行
 		for(int  k = 0; k < element; k ++ ) { //遍历每列
 			cout <<  smartArr[i][k] <<  "\t"; // 打印每行的每列元素, "\t"  为制表符分割
 		}
 		cout << "\n" << endl; 
+	}
+
+
+	// 方法二
+	for(auto & row : smartArr) { //auto 为自动逆行类型推断
+		for(auto num : row) {
+			cout << num << "\t";
+		}
+		cout << endl;
 	}
 
 	cin.get();
