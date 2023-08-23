@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/aic/Desktop/BasicCPlusPlus/basic/数组",
-      "program": "/Users/aic/Desktop/BasicCPlusPlus/basic/数组/build/Debug/outDebug"
+      "cwd": "/Users/aic/Desktop/BasicCPlusPlus/basic/数组算法/选择排序",
+      "program": "/Users/aic/Desktop/BasicCPlusPlus/basic/数组算法/选择排序/build/Debug/outDebug"
     }
   ]
 }
