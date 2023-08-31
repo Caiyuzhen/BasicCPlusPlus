@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/aic/Desktop/BasicCPlusPlus/basic/指针",
-      "program": "/Users/aic/Desktop/BasicCPlusPlus/basic/指针/build/Debug/outDebug"
+      "cwd": "/Users/bytedance/Desktop/BasicCPlusPlus/basic/引用",
+      "program": "/Users/bytedance/Desktop/BasicCPlusPlus/basic/引用/build/Debug/outDebug"
     }
   ]
 }
