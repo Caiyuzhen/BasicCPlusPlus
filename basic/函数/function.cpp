@@ -1,8 +1,10 @@
 #include<iostream>
+#include "utils.h"// 🔥🔥 引入自己定义的头文件
 using namespace std;
 
-// 👇函数声明, 具体实现在其他文件内！！
-string copyStr(string str, int n);
+
+// // 👇函数声明, 具体实现在其他文件内！！
+// string copyStr(string str, int n);
 
 
 /*
