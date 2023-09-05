@@ -42,7 +42,6 @@ int fib(int n) {
 
 
 
-
 int main() {
 
 	cout << "5 的阶乘等于: " << factorial2(5) << endl;  //120
