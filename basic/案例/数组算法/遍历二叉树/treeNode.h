@@ -11,3 +11,8 @@ struct TreeNode {
 };
 
 
+
+// 声明 printTree.cpp 内的函数
+void printTreePreOrder(TreeNode* root);
+void printTreeMidOrder(TreeNode* root);
+void printTreeLastOrder(TreeNode* root);

@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/aic/Desktop/BasicCPlusPlus/basic/案例/翻转链表",
-      "program": "/Users/aic/Desktop/BasicCPlusPlus/basic/案例/翻转链表/build/Debug/outDebug"
+      "cwd": "/Users/aic/Desktop/BasicCPlusPlus",
+      "program": "/Users/aic/Desktop/BasicCPlusPlus/build/Debug/outDebug"
     }
   ]
 }

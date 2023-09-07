@@ -14,7 +14,7 @@ using namespace std;
 int main() {
 	// 变量的引用
 	int a = 10, b = 25;
-	int& ref = a; // aa 相当于是 a 的快捷键方式
+	int& ref = a; // ref 相当于是 a 的快捷键方式
 
 	ref = 9; //操作引用 aa, 也相当于操作了 a
 	cout << "a 的值: " << a << endl;
