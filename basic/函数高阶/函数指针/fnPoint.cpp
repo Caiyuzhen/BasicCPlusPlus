@@ -29,19 +29,30 @@ const string& longerStr(const string& x, const string& y) {
  🌟🌟 【函数指针 => 一个指针指向函数】作为【另一个函数的形参】 ————————————————————————————————————————————————————————————————————————————————————————————————
 	根据场景, 有时候是选择更长的字符串, 有时候则是选择更短的字符串 => 则可以把选择的逻辑（return x.size() < y.size() ? x : y;）抽象成一个函数, 作为另一个函数的形参
 */
-// 【复杂的定义方式】
+
+
+
+// 【复杂的 函数作为指针参数 的定义方式】 ------------------------
 void selectStr(const string&x, const string&y, const string& (*fp)(const string&, const string&)) {
 	//...
 }
 
 
-// 【简化后的定义方式】 => FunA 为【指针函数】
-// 自定义类型别名 => 用来简短长度！
-typedef const string& (*FuncA)(const string&, const string&); //🔥 (*FuncA) 为类型别名！！用来替代上面👆那一长串函数指针的定义
 
-void selectStr2(const string&x, const string&y, FuncA) { // => FunA 为【指针函数】
+// 【简化后的 函数作为指针参数 的定义方式】 => FunA 为【指针函数】 ------------------------
+// typeof 为自定义类型别名 => 用来简短长度！
+
+typedef const string& (*FuncA)(const string&, const string&);  //🔥 (*FuncA) 为指针的类型别名！！用来替代上面👆那一长串函数指针的定义
+void selectStr2(const string&x, const string&y, FuncA) { // => FunA 为上面定义的 *FuncA 【⚡️指针函数的类型别名！！】
 	//...
-}
+};
+
+
+
+
+
+typedef const string& Func(const string&, const string&); // 普通函数的别名
+
 
 
 // 【C++ 11 提供的更简化的定义方式】
@@ -52,7 +63,14 @@ void selectStr2(const string&x, const string&y, FuncA) { // => FunA 为【指针
 
 // 🌟🌟 【函数指针 => 一个指针指向函数】作为【函数的返回值】, 默认函数不能作为函数的返回值, 但函数指针可以 ————————————————————————————————————————————————————————————————————————————————————————————————
 FuncA* funX(int); // 【写法一】funX 函数返回一个指向函数的指针, 该函数的参数为 int, 返回值为 FuncA 类型的指针
-auto funY(int) -> FuncA* // 【写法二】 auto XX() -> XXX* 使用尾置返回类型的定义方式, 更简洁！
+
+// Func fun2(int);//不能直接只用函数作为返回值❌
+
+FuncA fun3(int); // 因为 FuncA 是上面已经定义好的 typedef *FuncA , 函数指针的类型别名, 所以这里不用加星号也没问题
+
+auto funY(int) -> FuncA*; // 【写法二】 auto XX() -> XXX* 使用【尾置返回类型】的定义方式, 更简洁！
+
+
 
 
 
